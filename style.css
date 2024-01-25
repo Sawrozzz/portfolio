@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primaryColor: rgb(35, 210, 19);
+  --white: white;
+  --textColor: black;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--white);
+  color: var(--textColor);
+}
+body.dark {
+  --white: #191919;
+  --textColor: white;
+}
+
+header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 5rem;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+}
+.logo {
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.links a {
+  text-decoration: none;
+  color: var(--textColor);
+  padding: 0 10px;
+}
+
+.links a:hover {
+  color: rgb(35, 210, 19);
+}
+input[type="checkbox"] {
+  display: none;
+}
+label {
+  width: 60px;
+  height: 30px;
+  border-radius: 25px;
+  border: 2px solid var(--primaryColor);
+  cursor: pointer;
+  position: relative;
+  color: #000;
+}
+
+label::before {
+  position: absolute;
+  content: "Dark";
+  height: 100%;
+  width: 30px;
+  background-color: var(--primaryColor);
+  border-radius: 25px;
+  font-size: 8px;
+  display: grid;
+  place-items: center;
+  color: white;
+  transition: 0.2s;
+}
+input[type="checkbox"]:checked + label::before {
+  content: "Light";
+  color: black;
+  transform: translateX(30px);
+}
+main {
+  height: calc(100vh - 50px);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  place-items: center;
+}
+
+main .hero {
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+.job {
+  font-weight: bold;
+  color: var(--primaryColor);
+}
+.bio {
+  color: grey;
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+button {
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--primaryColor);
+  cursor: pointer;
+  font-weight: bold;
+}
+.social {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 20px;
+}
+.social a {
+  color: var(--primaryColor);
+  text-decoration: none;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.social a:hover {
+  transform: scale(1.2);
+}
+.blob {
+  width: 350px;
+  height: 250px;
+  background-color: var(--primaryColor);
+  overflow: hidden;
+  border-radius: 69% 34% 30% 70% / 60% 40% 60% 43%;
+  display: grid;
+  place-items: center;
+  box-shadow: 10px 10px 64px 15px var(--primaryColor);
+}
+img {
+  width: 350px;
+}
+@media only screen and (max-width: 1320px) {
+  body {
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  body {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 672px) {
+  header {
+    padding: 0;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  img {
+    width: 300px;
+  }
+  .blob {
+    width: 250px;
+    height: 230px;
+    background-color: var(--primaryColor);
+    overflow: hidden;
+    border-radius: 69% 34% 30% 70% / 60% 40% 60% 43%;
+    display: grid;
+    place-items: center;
+    box-shadow: 10px 10px 64px 15px var(--primaryColor);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  header {
+    margin-left: -25px;
+  }
+  .buttons {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    margin-top: 40px;
+    width: 15px;
+    height: 30px;
+  }
+  button {
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--primaryColor);
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  main {
+    /* height: calc(50vh - 10px); */
+    min-height: fit-content;
+    display: grid;
+    grid-template-columns: 30% 120%;
+    place-items: center;
+  }
+  img {
+    width: 250px;
+  }
+  .blob {
+    width: 200px;
+    height: 200px;
+    background-color: var(--primaryColor);
+    overflow: hidden;
+    border-radius: 69% 34% 30% 70% / 60% 40% 60% 43%;
+    display: grid;
+    place-items: center;
+    box-shadow: 10px 10px 64px 15px var(--primaryColor);
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+  label {
+    width: 45px;
+    height: 25px;
+    border-radius: 25px;
+    border: 2px solid var(--primaryColor);
+    cursor: pointer;
+    position: relative;
+    top: 40px;
+    right: 55px;
+  }
+  input[type="checkbox"]:checked + label::before {
+    content: "Light";
+    color: black;
+    transform: translateX(15px);
+  }
+}
