@@ -104,10 +104,14 @@ main .hero {
 .bio {
   color: grey;
 }
-.buttons {
+.buttons  {
   display: flex;
   gap: 20px;
   margin-top: 20px;
+}
+.buttons a{
+  text-decoration: none;
+  color: #000;
 }
 button {
   padding: 10px 30px;
@@ -186,7 +190,7 @@ img {
   header {
     margin-left: -25px;
   }
-  .buttons {
+  .buttons  {
     display: flex;
     text-align: center;
     gap: 10px;
