@@ -16,11 +16,11 @@
       <p class="logo">Saroj</p>
       <div class="links">
         <a href="#">Home</a>
-        <a href="#">Contact</a>
+        <a href="#" class="contact">Contact</a>
         <a href="#" class="skill">Skill</a>
-        <a href="#">About</a>
-        <input type="checkbox" id="toggle" />
-        <label for="toggle"></label>
+        <a href="#">Education</a>
+        <input class="inpo" type="checkbox" id="toggle" />
+        <label class="mylabel" for="toggle"></label>
       </div>
     </header>
     <main class="container">
@@ -31,7 +31,7 @@
           is Saroj Adhikari
         </h1>
         <p class="bio">
-          This is saroj , and enthugiast tech learner . An IT Student currently
+          This is saroj , and enthusiast tech learner . An IT Student currently
           enrolled on 6th semester at Amrit Science Campus
         </p>
         <div class="buttons">
@@ -90,10 +90,24 @@
         </ol>
       </div>
     </div>
+    <div class="contacts" id="contact">
+      <h1>Contact Me</h1>
+      <form class="contact-form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="4" required></textarea
+        ><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
     <div>
-      <h1>This is contact page</h1>
+      <h1>This is Education part</h1>
     </div>
     <script src="script.js"></script>
     <script src="skill.js"></script>
+    <script src="contact.js"></script>
   </body>
 </html>
