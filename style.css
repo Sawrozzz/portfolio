@@ -44,10 +44,12 @@ header {
   text-decoration: none;
   color: var(--textColor);
   padding: 0 10px;
+  transition: transform 0.3s ease;
 }
 
 .links a:hover {
   color: rgb(35, 210, 19);
+  transform: scale(1.1);
 }
 input[type="checkbox"] {
   display: none;
@@ -159,10 +161,9 @@ img {
   justify-content: space-around;
   padding: 20px;
 }
-
 .card {
   background-color: #f0f0f0;
-  border: 1px solid black;
+  border: 1px solid var(--primaryColor);
   border-radius: 8px;
   padding: 20px;
   transition: width 0.3s ease;
@@ -175,9 +176,13 @@ img {
 }
 .card:hover {
   background-color: var(--primaryColor);
-  transition: ease-in-out .5s;
+  transition: ease-in-out 0.5s;
 }
 .card h2 {
+  color: #000;
+}
+.card ol li {
+  color: #000;
 }
 
 /*this is for responsive */
@@ -289,5 +294,14 @@ img {
     content: "Light";
     color: black;
     transform: translateX(15px);
+  }
+  .skills {
+    display: block;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    overflow: scroll;
   }
 }
