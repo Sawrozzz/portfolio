@@ -154,10 +154,10 @@ button {
 .social a:hover {
   transform: scale(1.2);
 }
-.social a:not(:last-child)::after {
-  content: "|";;
-  color: #ccc;
+.copyright{
+  text-align: center;
 }
+
 .back {
   width: 350px;
   height: 250px;
