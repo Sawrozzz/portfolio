@@ -25,7 +25,7 @@
         <a href="#">Home</a>
         <a href="#" class="contact">Contact</a>
         <a href="#" class="skill">Skill</a>
-        <a href="#">Education</a>
+        <a href="#" class="educations">Education</a>
         <input class="inpo" type="checkbox" id="toggle" />
         <label class="mylabel" for="toggle"></label>
       </div>
@@ -43,7 +43,7 @@
         </p>
         <div class="buttons">
           <button><a href="https://github.com/Sawrozzz">Github</a></button>
-          <button>Resume</button>
+          <button id="downloadBtn">Resume</button>
         </div>
         <div class="social">
           <a href="https://www.facebook.com/profile.php?id=100027902503817"
@@ -110,11 +110,43 @@
         <button onclick="sendMail()">Send</button>
       </form>
     </div>
-    <div>
-      <h1>This is Education part</h1>
-    </div>
+    <section class="education" id="myeducation">
+      <h2 class="section-title">Education</h2>
+      <div class="education-item">
+        <h3>Primary Level and SEE</h3>
+        <p>Shree Pancha Higher Seconday School, Deumai-3 Ilam</p>
+        <p class="date">Passed Year - 2073</p>
+      </div>
+      <div class="education-item">
+        <h3>+2 in Science</h3>
+        <p>Laboratory English Boarding School, Kirtipur Kathmandu</p>
+        <p class="date">2074 - 2076</p>
+      </div>
+      <div class="education-item">
+        <h3>
+          Bachelor's Degree in Computer Science and Information Technology
+        </h3>
+        <p>Amrit Science Campus, Lainchaur Kathmandu</p>
+        <p class="date">2077 - Present</p>
+      </div>
+    </section>
     <script src="script.js"></script>
     <script src="skill.js"></script>
     <script src="contact.js"></script>
+    <script src="edu.js"></script>
+
+    <script>
+      //for resume download
+      document
+        .getElementById("downloadBtn")
+        .addEventListener("click", function () {
+          const resumeUrl = "./resume/Saroj CV.pdf";
+          const link = document.createElement("a");
+          link.href = resumeUrl;
+          link.setAttribute("download", "your_resume.pdf");
+          document.body.appendChild(link);
+          link.click();
+        });
+    </script>
   </body>
 </html>

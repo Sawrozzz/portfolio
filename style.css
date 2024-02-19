@@ -248,6 +248,39 @@ input[type="submit"] {
   transform: scale(1.1);
   background-color: rgb(21, 255, 12);
 }
+.education {
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  margin-top: 80px;
+}
+.section-title {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.education-item {
+  margin-bottom: 80px;
+  border-left: 4px solid #3498db;
+  padding-left: 10px;
+}
+.education-item h3 {
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: #333;
+}
+.education-item p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #555;
+}
+.date {
+  font-size: 16px;
+  color: #777;
+}
 @media only screen and (max-width: 672px) {
   header {
     padding-left: 30px;
