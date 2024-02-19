@@ -135,6 +135,11 @@ button {
   background-color: var(--primaryColor);
   cursor: pointer;
   font-weight: bold;
+  transition: 0.2s;
+}
+button:hover{
+ background-color:rgb(81, 255, 93);
+ transform: scale(1.1);
 }
 .social {
   display: flex;
@@ -188,7 +193,6 @@ img {
   width: 30%;
   box-shadow: 0 4px 8px var(--primaryColor);
   display: grid;
-
   place-items: center;
 }
 .card:hover {
