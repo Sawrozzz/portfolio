@@ -23,9 +23,9 @@
       <p class="logo">Saroj</p>
       <div class="links">
         <a href="#">Home</a>
-        <a href="#" class="contact">Contact</a>
         <a href="#" class="skill">Skill</a>
         <a href="#" class="educations">Education</a>
+        <a href="#" class="contact">Contact</a>
         <input class="inpo" type="checkbox" id="toggle" />
         <label class="mylabel" for="toggle"></label>
       </div>
@@ -83,19 +83,7 @@
         </ol>
       </div>
     </div>
-    <div class="contacts" id="contact">
-      <h1>Contact Me</h1>
-      <form action="" class="contact-form" id="form-contact">
-        <label class="contact-label" for="name">Name:</label>
-        <input type="text" id="name" name="name" required /><br />
-        <label class="contact-label" for="email">Email:</label>
-        <input type="email" id="email_id" name="email" required /><br />
-        <label class="contact-label" for="message">Message:</label><br />
-        <textarea id="message" name="message" rows="4" required></textarea
-        ><br />
-        <button onclick="sendMail()">Send</button>
-      </form>
-    </div>
+    
     <section class="education" id="myeducation">
       <h2 class="section-title">Education</h2>
       <div class="education-item">
@@ -116,7 +104,21 @@
         <p class="date">2077 - Present</p>
       </div>
     </section>
+    <div class="contacts" id="contact">
+      <h1>Contact Me</h1>
+      <form action="" class="contact-form" id="form-contact">
+        <label class="contact-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br />
+        <label class="contact-label" for="email">Email:</label>
+        <input type="email" id="email_id" name="email" required /><br />
+        <label class="contact-label" for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="4" required></textarea
+        ><br />
+        <button onclick="sendMail()">Send</button>
+      </form>
+    </div>
     <footer>
+      <span class="line"></span>
       <div class="social">
         <a href="https://www.facebook.com/profile.php?id=100027902503817"
           ><i class="bx bxl-facebook"></i

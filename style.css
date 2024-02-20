@@ -162,6 +162,11 @@ button:hover{
 .copyright{
   text-align: center;
 }
+.line{
+  border: 1px solid var(--primaryColor);
+  display: flex;
+  margin-top: 4px;
+}
 
 .back {
   width: 350px;
